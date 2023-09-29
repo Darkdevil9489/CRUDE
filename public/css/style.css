@@ -1,0 +1,41 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: darkblue;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+}
+table{
+    border: 1px solid white;
+}
+tr{
+    border: 1px solid white;
+}
+td{
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
+}
+th{
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
+    background: green;
+}
+.edit{
+    border:1px solid ;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+.delete{
+    border:1px solid ;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+h4{
+    color:black;
+}

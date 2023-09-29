@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>crude operation</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="/save"><button>Add user</button></a>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>s.no</th>
+                            <th>Name</th>
+                            <th>age</th>
+                            <th>number</th>
+                            <th colspan="2">changes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        {{#each row}}
+                        <tr>
+                            <td>{{this.id}}</td>
+                             <td>{{this.name}}</td>
+                              <td>{{this.age}}</td>
+                               <td>{{this.number}}</td>
+                                <td><a class="edit" href="/edit/{{this.id}}" class>Edit</a></td>
+                               <td><a  class="delete" href="/delete/{{this.id}}">delete</a></td>
+                        </tr>
+                        {{/each}}
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+   <html>
+    <head>
+        <title>crude operation</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+            <div class="form-data">
+              {{!-- <a href="/" ><button>edit useer</button></a>  --}}
+               <h4>{{msg}}</h4> 
+                <form action="/save" method="post">
+                {{#each row}}
+<input type="text" name="name" placeholder="name" id="name" value="{{this.name}}"/> 
+<input type="number" name="age" placeholder="age" id="age" value="{{this.age}}"/>
+<input type="number" name="number" placeholder="number" id="number" value="{{this.number}}"/>
+<button type="submit">submit</button>
+ {{/each}}
+                </form>
+            </div>
+             </body>
+</html>
